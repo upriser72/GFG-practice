@@ -5,22 +5,24 @@ using namespace std;
 
 // } Driver Code Ends
 
-class Solution {
+class Solution 
+{
   public:
-    string isPrime(int n) {
-        int flag=0;
+    string isPrime(int n) 
+    {
         if(n==0 || n==1)
-            return "No";
-        // code here
-        for(int i=2;i<n;i++)
         {
-            if(n%i==0)
-                flag+=1;
-        }
-        if(flag==0)
-            return "Yes";
-        else
             return "No";
+        }
+        for (int i = 2; i <= sqrt(n); i++) 
+        {
+             
+            if (n % i == 0) 
+            {
+                return "No";
+            }
+        }
+        return "Yes";
     }
 };
 
