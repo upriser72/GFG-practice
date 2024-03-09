@@ -18,7 +18,7 @@ public:
     }
 };
 
-//{ Driver Code Starts.
+// Driver Code Starts.
 int main() 
 { 
     int t;
@@ -32,4 +32,4 @@ int main()
     }
     return 0; 
 }
-// } Driver Code Ends
+//  Driver Code Ends
